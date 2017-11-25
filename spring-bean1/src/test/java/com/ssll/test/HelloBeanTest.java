@@ -36,7 +36,7 @@ public class HelloBeanTest {
 		assertEquals(bean2.getName(), bean3.getName());
 		
 		HelloSpring bean1=framework.getBean("bean1",HelloSpring.class);
-		assertEquals("Thidar", ");
+		assertEquals("Thidar", bean1.getName());
 	}
 
 }
