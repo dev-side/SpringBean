@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="bean1" class="com.ssll.spring.bean.HelloSpring">
+		<property name="name" ref="thidar"></property>
+	</bean>
+	<bean name="bean2,bean3" class="com.ssll.spring.bean.HelloSpring">
+		<property name="name" value="Laung Laung"></property>
+	</bean>
+	<alias name="bean2" alias="bean4" />
+
+	<bean id="thidar" class="java.lang.String">
+		<constructor-arg value="Thidar"></constructor-arg>
+	</bean>
+</beans>
